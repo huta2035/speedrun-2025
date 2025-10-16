@@ -1,0 +1,8 @@
+services:
+  hhvm:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8080"
+    restart: always
+    cap_drop:
+      - ALL

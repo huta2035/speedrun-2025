@@ -1,0 +1,44 @@
+from pwn import *
+
+
+def play_game(tube, choice):
+    global PLAYER_BALANCE
+    tube.recvuntil(b'your choice? ')
+    tube.send(b'1\n')
+    tube.recvuntil(b'scissors? ')
+    tube.send(choice.encode() + b'\n')
+    result = tube.recvline().decode().strip()
+    if 'win' in result:
+        PLAYER_BALANCE += 1
+    elif 'lose' in result:
+        PLAYER_BALANCE -= 1
+
+def buy_flag(tube):
+    tube.recvuntil(b'your choice? ')
+    tube.send(b'2\n')
+    return tube.recvline().decode().strip()
+    
+
+nc = remote("localhost", 1337)
+
+# Process the chall intro
+print(nc.recvline())
+print(nc.recvline())
+print(nc.recvuntil(b"costs "), end='')
+FLAG_PRICE = int(nc.recvuntil(b'$').decode().rstrip('$'))
+print(f"{FLAG_PRICE}$", end='a')
+print(nc.recvline())
+
+# Local replica of the player balance, automatically updated by play_game()
+PLAYER_BALANCE = 1000
+
+# Your time to shine!
+
+# Fill here
+
+# Example:
+# play_game(nc, 'scissors')
+# play_game(nc, 'paper')
+# print(buy_flag(nc))
+
+nc.close()
